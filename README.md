@@ -32,3 +32,8 @@ To rebuild a stack from this repository:
 2. Create real `.env` or secrets files from the provided `.example` files.
 3. Restore persisted data from backups.
 4. Start the service with Docker Compose.
+
+## Sanitization notice
+
+This repository contains sanitized infrastructure templates only.
+Real secrets, domains, IP addresses, tunnel IDs, hostnames, and backup paths are intentionally excluded.
