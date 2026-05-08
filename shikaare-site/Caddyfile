@@ -1,0 +1,17 @@
+http://example.com, http://www.example.com {
+    root * /srv
+    file_server
+}
+
+paperless.example.com {
+    reverse_proxy 127.0.0.1:8000
+}
+
+homeassistant.example.com {
+    reverse_proxy 127.0.0.1:8123
+}
+
+kuma.example.com {
+    reverse_proxy 127.0.0.1:3001
+}
+

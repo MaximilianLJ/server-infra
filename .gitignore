@@ -1,0 +1,48 @@
+# Real secrets
+.env
+.env.*
+!.env.example
+secrets.yaml
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+id_rsa
+id_ed25519
+authorized_keys
+
+# Runtime data
+data/
+media/
+redis/
+uploads/
+upload/
+consume/
+export/
+screenshots/
+backups/
+
+# Databases
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.rdb
+*.dump
+*.sql
+*.pickle
+
+# Logs/cache/runtime
+*.log
+*.log.*
+logs/
+log/
+cache/
+tmp/
+run/
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
