@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Updated to reflect your new home-based structure
+REPO_DIR="/home/mlj/srv/shikaare-site/repo"
+PUBLIC_DIR="/home/mlj/srv/shikaare-site/public"
+COMPOSE_DIR="/home/mlj/srv/shikaare-site"
+
+# 1. Pull latest code
+git -C "$REPO_DIR" pull --ff-only
+
+# 2. Sync files to the public folder
+rsync -a --delete \
+  --exclude '.git/' \
+  --exclude '.github/' \
+  --exclude 'README.md' \
+  "$REPO_DIR"/ "$PUBLIC_DIR"/
+
+# 3. Restart Docker (Note: You mentioned removing compose.yaml earlier!)
+docker compose -f "$COMPOSE_DIR/compose.yaml" up -d
+echo "Update complete!"
