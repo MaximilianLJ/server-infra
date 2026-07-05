@@ -1,6 +1,6 @@
 # Server
 
-The host for my homelab
+The host for my homelab.
 
 ## Host
 
@@ -16,7 +16,7 @@ Shell: bash 5.2.21
 ```text
 CPU: AMD Ryzen 5 PRO 2400G (8) @ 3.60 GHz
 GPU: AMD Radeon Vega 11 Graphics [Integrated]
-Memory: 14.57 GiB
+Memory: 32.00 GiB
 Swap: 4.00 GiB
 Root disk: 97.87 GiB ext4
 ```
